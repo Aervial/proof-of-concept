@@ -6,8 +6,6 @@ local flicker2 = light.SFX.flicker2
 local buzz = light.SFX.buzz
 local event1 = game.ReplicatedStorage.ClickEvent
 local event2 = game.ReplicatedStorage.EyesEvent
-local giggle = game.Workspace.SFX.giggle
-local whisper = game.Workspace.SFX.iseeyou
 
 buzz:Play()
 
