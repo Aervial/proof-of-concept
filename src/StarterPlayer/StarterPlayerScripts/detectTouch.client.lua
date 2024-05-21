@@ -1,8 +1,8 @@
 task.wait(2)
 local part1 = game.Workspace:WaitForChild("room"):WaitForChild("scarypart") -- Wait for the "scarypart" object to exist
 local part2 = game.Workspace:WaitForChild("room"):WaitForChild("eyesPart")
-local fired = false
-local eyes = false
+	local fired = false
+	local eyes = false
 
 part1.Touched:Connect(function()
 	if not fired then
@@ -10,6 +10,7 @@ part1.Touched:Connect(function()
 		game.ReplicatedStorage.ClickEvent:FireServer()
 		part1:Destroy()
 	else
+		-- intentionally left empty
 	end
 end)
 
@@ -19,5 +20,6 @@ part2.Touched:Connect(function()
 		game.ReplicatedStorage.EyesEvent:FireServer()
 		part2:Destroy()
 	else
-	end
+		-- intentionally left empty
+	end	
 end)
