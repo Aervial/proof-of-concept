@@ -10,7 +10,6 @@ part1.Touched:Connect(function()
 		game.ReplicatedStorage.ClickEvent:FireServer()
 		part1:Destroy()
 	else
-
 	end
 end)
 
@@ -20,6 +19,5 @@ part2.Touched:Connect(function()
 		game.ReplicatedStorage.EyesEvent:FireServer()
 		part2:Destroy()
 	else
-		
 	end
 end)
